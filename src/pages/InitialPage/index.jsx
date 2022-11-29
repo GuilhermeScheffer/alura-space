@@ -1,7 +1,8 @@
-import Footer from "../../components/Footer";
-import Gallery from "../../components/Gallery";
-import Header from "../../components/Header";
-import Menu from "../../components/Menu";
+import Footer from "components/Footer";
+import Gallery from "components/Gallery";
+import Header from "components/Header";
+import Menu from "components/Menu";
+import Populares from "components/Populares";
 import banner from './banner.png'
 import styles from './InitialPage.module.scss'
 
@@ -17,10 +18,11 @@ export default function InitialPage() {
                         <img src={banner} alt="A imagem da terra vista do espaço" />
                     </div>
                 </section>
+                <div className={styles.galeria}>
+                    <Gallery />
+                    <Populares />
+                </div>
             </main>
-            <div className={styles.galeria}>
-                <Gallery />
-            </div>
             <Footer />
         </>
     )
